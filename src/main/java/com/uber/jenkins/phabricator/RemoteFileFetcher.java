@@ -78,6 +78,6 @@ public class RemoteFileFetcher {
         byte[] buffer = new byte[maxLength];
         IOUtils.read(source.read(), buffer);
 
-        return new String(buffer);
+        return new String(buffer, "UTF-8");
     }
 }
